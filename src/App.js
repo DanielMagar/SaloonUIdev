@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       Hello Saloon App , the first commit let me test the branches
       <br />
-      Bhanu 2nd Check 🛠
+      Bhanu 3rd Check 🛠 🔧✔
     </div>
   );
 }
