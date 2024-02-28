@@ -1,5 +1,5 @@
 import { CgProfile } from 'react-icons/cg';
-import logo from '../image/white-logo.png';
+import logo from '../../image/white-logo.png';
 
 function Nav() {
   return (
@@ -9,6 +9,8 @@ function Nav() {
         <div className="logo-box">
           <img src={logo} alt="header_background" />
         </div>
+
+        {/* replace by router */}
         <div className="menu">
           <p>Home</p>
           <p>Services</p>
