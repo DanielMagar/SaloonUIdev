@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import Nav from './components/Nav';
+import Main from './components/main';
 function App() {
   return (
     <div className="App">
-      Hello Saloon App , the first commit let me test the branches
-      <br />
-      Bhanu 3rd Check 🛠 🔧✔
+      <header className="header">
+        <Nav />
+        <Main />
+      </header>
     </div>
   );
 }
