@@ -4,6 +4,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* HEADER */
+
+.header {
+  background-image: url('./image/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+  width: 100vw;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+}
+
 /* NAV BAR */
 
 .nav {
@@ -44,16 +56,6 @@
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
-}
-
-.header {
-  background-image: url('./image/bg1.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.9);
-  width: 100vw;
-  height: 100vh;
-  color: rgb(255, 255, 255);
 }
 
 /* main */
@@ -97,4 +99,67 @@
 
 .book:hover {
   box-shadow: 5px 5px 6px rgba(34, 34, 34, 0.911);
+}
+
+/* Meadia Query */
+
+@media (max-width: 480px) {
+  .header {
+    overflow: hidden;
+    width: 360px;
+    background-position: 86%;
+  }
+
+  .nav {
+    width: 320px;
+    margin: 5px auto;
+    justify-content: space-between;
+  }
+
+  .logo-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu {
+    width: 200px;
+    font-size: 10px;
+    justify-content: space-between;
+  }
+
+  /* MAIN */
+
+  .main {
+    color: rgb(53, 53, 53);
+    margin: 250px auto;
+    width: 320px;
+    height: 270px;
+    align-items: center;
+  }
+
+  .greet {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    width: 130px;
+    font-size: 16px;
+  }
+
+  .headline {
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.329);
+  }
+
+  .headline-des {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(24, 24, 24);
+  }
+
+  .book {
+    padding: 5px 10px;
+  }
 }
