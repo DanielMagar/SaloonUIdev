@@ -4,6 +4,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.App {
+  overflow: hidden;
+}
+
 /* HEADER */
 
 .header {
@@ -103,15 +107,41 @@
 
 /* Meadia Query */
 
-@media (max-width: 480px) {
+/*Large Tablet */
+
+@media screen and (max-width: 1200px) {
+  .header {
+    background-position: 80%;
+  }
+}
+
+/*Medium Tablet */
+
+@media screen and (max-width: 944px) and (min-width: 481) {
+  .main {
+    margin-left: 45px;
+  }
+
+  .headline {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .headline-des {
+    width: 450px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
   .header {
     overflow: hidden;
-    width: 360px;
-    background-position: 86%;
+    background-position: 90%;
   }
 
   .nav {
-    width: 320px;
+    width: 90%;
     margin: 5px auto;
     justify-content: space-between;
   }
@@ -122,8 +152,8 @@
   }
 
   .menu {
-    width: 200px;
-    font-size: 10px;
+    width: 230px;
+    font-size: 12px;
     justify-content: space-between;
   }
 
@@ -139,17 +169,17 @@
 
   .greet {
     position: absolute;
-    top: 12%;
-    left: 3%;
-    width: 130px;
-    font-size: 16px;
+    top: 13%;
+    left: 5%;
+    width: 135px;
+    font-size: 18px;
   }
 
   .headline {
     font-size: 48px;
     line-height: 55px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.329);
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   .headline-des {
