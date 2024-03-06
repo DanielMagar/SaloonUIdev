@@ -1,5 +1,5 @@
 import { CgProfile } from 'react-icons/cg';
-import logo from '../../image/white-logo.png';
+import logo from '../../image/header/white-logo.png';
 
 function Nav() {
   return (

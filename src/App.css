@@ -1,22 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 .App {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* HEADER */
 
 .header {
-  background-image: url('./image/bg1.jpg');
+  background-image: url('./image/header/bg1.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(0.9);
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   color: rgb(255, 255, 255);
 }
 
@@ -251,4 +252,102 @@
     top: 9%;
     left: 2%;
   }
+}
+
+/* /////////////////// TESTIMONIALS SECTION /////////////////////// */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #cebda6;
+}
+
+.testimonials-heading {
+  text-align: center;
+}
+
+.testimonials-heading h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 80px;
+  text-shadow: 4px 10px 4px rgb(34, 34, 34, 25%);
+}
+
+.testimonials-container {
+  /* background-color: aqua; */
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.testimonials-card {
+  background-color: white;
+  width: 300px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 8px 10px 10px 2px rgb(0, 0, 0, 25%);
+}
+
+.testimonials-pic {
+  width: 180px;
+  height: 180px;
+  border: 6px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(-50%);
+  box-shadow: 8px 10px 10px 2px rgb(0, 0, 0, 25%);
+}
+
+.testimonials-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials-name {
+  margin-top: 100px;
+  color: #80acbb;
+}
+
+/* //////// RATING ////// */
+.rating {
+  display: flex;
+  gap: 3px;
+  color: #ffc700;
+}
+
+.rating i:nth-child(3) {
+  margin-top: 3px;
+}
+
+.rating i:nth-child(even) {
+  margin-top: 12px;
+}
+.rating i:first-child {
+  margin-top: 18px;
+}
+.rating i:last-child {
+  margin-top: 18px;
+}
+
+.testimonials-sub {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 18px;
+}
+
+.testimonials-review {
+  width: 85%;
+  margin-bottom: 40px;
+}
+
+.testimonials-review p {
+  color: #767676;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 700;
 }
