@@ -10,6 +10,11 @@ function TestimonialsCards({ objectData, value }) {
           style={{
             left: `${index * 340}px`,
             transform: `translateX(-${value}px)`,
+
+            ...(window.innerWidth <= 1200 && {
+              left: `${index * 310}px`,
+              transform: `translateX(-${value - 100}px)`,
+            }),
           }}
         >
           <div className="testimonials-pic">

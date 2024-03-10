@@ -1,5 +1,4 @@
 import { CgProfile } from 'react-icons/cg';
-import logo from '../../image/header/white-logo.png';
 
 function Nav() {
   return (
@@ -7,7 +6,10 @@ function Nav() {
       {/* nav bar */}
       <nav className="nav">
         <div className="logo-box">
-          <img src={logo} alt="header_background" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Flogo.png?alt=media&token=0ef04a68-89eb-435b-bb69-503336dcf431"
+            alt="header_background"
+          />
         </div>
 
         {/* replace by router */}
