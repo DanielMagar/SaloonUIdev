@@ -12,7 +12,7 @@
 /* HEADER */
 
 .header {
-  background-image: url('./image/header/bg1.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2FheaderBannerImage.jpg?alt=media&token=7e0d9770-fca8-46dd-98c7-226486580210');
   background-size: cover;
   background-position: center;
   filter: brightness(0.9);
@@ -286,7 +286,8 @@
 
 .testimonials-slider {
   padding: 10px;
-  width: 1000px;
+  width: 100%; /* Change width to 100% */
+  max-width: 1000px; /* Set maximum width */
   height: 500px;
   position: relative;
   overflow: hidden;
@@ -395,6 +396,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 3%;
+  z-index: 1;
   color: #383838;
   height: 70px;
   overflow: hidden;
@@ -411,8 +413,55 @@
   top: 50%;
   transform: translateY(-50%);
   right: 3%;
+  z-index: 1;
   color: #383838;
   height: 70px;
   overflow: hidden;
   cursor: pointer;
+}
+
+/*/////// TESTIMONIALS MEDIA QUERY/////////////// */
+
+/*//////Large Tablet ////////*/
+
+@media screen and (max-width: 1200px) {
+  .testimonials-slider {
+    max-width: 930px;
+  }
+
+  .testimonials-card {
+    top: 15%;
+    width: 250px;
+    /* height: 350px; */
+  }
+
+  .testimonials-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .testimonials-qoute > img {
+    bottom: -20%;
+    right: -5%;
+    scale: 0.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-heading > h1 {
+    font-size: 50px;
+  }
+
+  .testimonials-slider {
+    max-width: 570px;
+  }
+  .testimonials-card {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .testimonials-slider {
+    width: 290px;
+  }
 }
