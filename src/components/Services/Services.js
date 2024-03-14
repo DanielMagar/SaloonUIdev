@@ -9,11 +9,12 @@ function Services() {
   return (
     <div className="services-sec">
       <h2>Services</h2>
+
       <div className="services-outer-container">
-        <ServicesCard />
-        <ServicesCard />
-        <ServicesCard />
-        <ServicesCard />
+        <ServicesCard image={cut} name="cut" />
+        <ServicesCard image={makeup} name="makeup" />
+        <ServicesCard image={manycure} name="manycure" />
+        <ServicesCard image={color} name="color" />
       </div>
     </div>
   );

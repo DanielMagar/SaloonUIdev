@@ -1,18 +1,16 @@
-import cut from '../../image/services/cut.jpg';
-
-function ServicesCard() {
+function ServicesCard(props) {
   return (
     <div className="services-container">
       <div className="services-card">
         <div className="services-img">
-          <img src={cut} alt="cut" />
+          <img src={props.image} alt="cut" />
         </div>
-        <h2>Cut</h2>
+        <h2>{props.name}</h2>
         <div className="services-card-details">
-          {/* <div className="services-heading">
-            <h2>Hair</h2>
-          </div> */}
-          {/* <div className="services-details">
+          <div className="services-heading">
+            <h2>{props.name}</h2>
+          </div>
+          <div className="services-details">
             <table>
               <tr>
                 <td>Short Hair Cut</td>
@@ -35,7 +33,7 @@ function ServicesCard() {
                 <td>250/-</td>
               </tr>
             </table>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
