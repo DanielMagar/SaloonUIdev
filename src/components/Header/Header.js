@@ -1,5 +1,5 @@
 import Nav from '../Reusable/Nav.js';
-import woman from '../../image/header/woman.png';
+import woman1 from '../../image/header/woman1.png';
 function Header() {
   return (
     <header className="header">
@@ -16,7 +16,7 @@ function Header() {
           <div className="book">Book an appointment →</div>
         </div>
         <div className="headerimg">
-          <img src={woman} alt="woman" />
+          <img src={woman1} alt="woman" />
         </div>
       </main>
     </header>
