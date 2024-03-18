@@ -2,7 +2,7 @@ import React from 'react';
 import ServicesCard from './ServicesCard';
 import cut from '../../image/services/cut.jpg';
 import makeup from '../../image/services/makeup.jpg';
-import manycure from '../../image/services/manycure.jpg';
+import manicure from '../../image/services/manicure.jpg';
 import color from '../../image/services/color.jpg';
 
 function Services() {
@@ -13,7 +13,7 @@ function Services() {
       <div className="services-outer-container">
         <ServicesCard image={cut} name="cut" />
         <ServicesCard image={makeup} name="makeup" />
-        <ServicesCard image={manycure} name="manycure" />
+        <ServicesCard image={manicure} name="manycure" />
         <ServicesCard image={color} name="color" />
       </div>
     </div>
