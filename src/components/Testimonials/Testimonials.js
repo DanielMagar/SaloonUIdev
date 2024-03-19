@@ -1,11 +1,26 @@
 import TestimonialsCard from './TestimonialsCard';
-import nick from '../../image/testimonials/nick.jpg';
-import kay from '../../image/testimonials/kay.jpg';
-import amar from '../../image/testimonials/amar.jpg';
-import mick from '../../image/testimonials/mick.jpg';
-import rin from '../../image/testimonials/rin.jpg';
-import sara from '../../image/testimonials/sara.jpg';
 import { useState } from 'react';
+// import nick from '../../image/testimonials/nick.jpg';
+// import kay from '../../image/testimonials/kay.jpg';
+// import amar from '../../image/testimonials/amar.jpg';
+// import mick from '../../image/testimonials/mick.jpg';
+// import rin from '../../image/testimonials/rin.jpg';
+// import sara from '../../image/testimonials/sara.jpg';
+
+const amar =
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fam[…]?alt=media&token=ce3106ce-f445-4462-840f-fad6198d5aae';
+
+const kay =
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fka[…]?alt=media&token=b32e8308-5d97-4cd6-b932-c867abe3a31e';
+
+const mick =
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fmi[…]?alt=media&token=980fbafb-fb4c-47aa-8aba-d1d507f9f951';
+const nick =
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fni[…]?alt=media&token=0729598f-f3bb-417b-b371-c169b81013ae';
+const rin =
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fri[…]?alt=media&token=2dea6467-a386-425c-b1f6-4f5e4ead6d18';
+const sara =
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fsa[…]?alt=media&token=4b3a9439-3e24-45c7-824a-1dff1f31bdd4';
 
 function Testimonials() {
   const objectData = [
