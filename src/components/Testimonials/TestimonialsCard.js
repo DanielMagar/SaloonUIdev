@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { IoIosStar } from 'react-icons/io';
-// import double from '../../image/testimonials/double.png';
 const double =
-  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fdo[…]?alt=media&token=f442658e-97d9-4687-b770-5751ff8516ba';
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fdouble.png?alt=media&token=f442658e-97d9-4687-b770-5751ff8516ba';
 
 function TestimonialsCards({ objectData, value }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

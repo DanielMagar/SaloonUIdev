@@ -19,7 +19,7 @@ function Services() {
       <div className="services-outer-container">
         <ServicesCard image={cut} name="cut" />
         <ServicesCard image={makeup} name="makeup" />
-        <ServicesCard image={manicure} name="manycure" />
+        <ServicesCard image={manicure} name="manicure" />
         <ServicesCard image={color} name="color" />
       </div>
     </div>
