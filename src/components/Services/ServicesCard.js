@@ -11,28 +11,26 @@ function ServicesCard(props) {
             <h2>{props.name}</h2>
           </div>
           <div className="services-details">
-            <table>
-              <tr>
-                <td>Short Hair Cut</td>
-                <td>250/-</td>
-              </tr>
-              <tr>
-                <td>Long Hair Cut</td>
-                <td>250/-</td>
-              </tr>
-              <tr>
-                <td>Bang</td>
-                <td>250/-</td>
-              </tr>
-              <tr>
-                <td>Creative Cut</td>
-                <td>250/-</td>
-              </tr>
-              <tr>
-                <td>Cut + Blow Dry</td>
-                <td>250/-</td>
-              </tr>
-            </table>
+            <div className="tr">
+              <div>Short Hair Cut</div>
+              <div>&#8377; 250/-</div>
+            </div>
+            <div className="tr">
+              <div>Long Hair Cut</div>
+              <div>&#8377; 250/-</div>
+            </div>
+            <div className="tr">
+              <div>Bang</div>
+              <div>&#8377; 250/-</div>
+            </div>
+            <div className="tr">
+              <div>Creative Cut</div>
+              <div>&#8377; 250/-</div>
+            </div>
+            <div className="tr">
+              <div>Cut + Blow Dry</div>
+              <div>&#8377; 250/-</div>
+            </div>
           </div>
         </div>
       </div>

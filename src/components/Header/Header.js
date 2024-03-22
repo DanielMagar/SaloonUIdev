@@ -1,5 +1,8 @@
 import Nav from '../Reusable/Nav.js';
-import woman1 from '../../image/header/woman1.png';
+
+const woman =
+  'https://firebasestorage.googleapis.com/v0/b/saloonweb-ad3f5.appspot.com/o/Saloon-Images%2Fwoman1.png?alt=media&token=0a98b45a-3c13-45f3-8a32-407e78d8e2e9';
+
 function Header() {
   return (
     <header className="header">
@@ -16,7 +19,7 @@ function Header() {
           <div className="book">Book an appointment →</div>
         </div>
         <div className="headerimg">
-          <img src={woman1} alt="woman" />
+          <img src={woman} alt="woman" />
         </div>
       </main>
     </header>
