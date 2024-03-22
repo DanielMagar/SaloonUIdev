@@ -15,9 +15,10 @@
   background-color: #cebda6;
   width: 100vw;
   height: 800px;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
+  color: #dd5e89;
   overflow-y: hidden;
-  border-bottom: 5px solid white;
+  /* border-bottom: 5px solid white; */
 }
 
 /* NAV BAR */
@@ -26,6 +27,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: rgb(255, 255, 255);
 }
 
 /* LOGO IMAGE */
@@ -92,6 +94,7 @@
   font-size: 100px;
   font-weight: 450;
   line-height: 110px;
+  /* color: #f75a8e; */
 }
 
 .headline-des {
@@ -584,13 +587,14 @@
 }
 
 .services-details {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .tr {
+  width: 270px;
   border: 1px solid transparent;
   border-radius: 10px;
   padding: 5px;
@@ -604,6 +608,29 @@
 .tr:hover {
   border: 1px solid white;
   box-shadow: 2px 2px 5px #222222d2;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  gap: 10px;
+  margin-top: -70px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.dot1 {
+  background-color: rgb(247, 51, 165);
+}
+
+.dot2 {
+  background-color: #1a1a1a;
 }
 
 /*///// MEDIA QUERY /// */

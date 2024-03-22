@@ -11,26 +11,14 @@ function ServicesCard(props) {
             <h2>{props.name}</h2>
           </div>
           <div className="services-details">
-            <div className="tr">
-              <div>Short Hair Cut</div>
-              <div>&#8377; 250/-</div>
-            </div>
-            <div className="tr">
-              <div>Long Hair Cut</div>
-              <div>&#8377; 250/-</div>
-            </div>
-            <div className="tr">
-              <div>Bang</div>
-              <div>&#8377; 250/-</div>
-            </div>
-            <div className="tr">
-              <div>Creative Cut</div>
-              <div>&#8377; 250/-</div>
-            </div>
-            <div className="tr">
-              <div>Cut + Blow Dry</div>
-              <div>&#8377; 250/-</div>
-            </div>
+            {props.servicesList.map((list) => {
+              return (
+                <div className="tr">
+                  <div>{list.name}</div>
+                  <div>&#8377; {list.price}/-</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
